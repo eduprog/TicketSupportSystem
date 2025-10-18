@@ -1,7 +1,9 @@
+using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Scalar.AspNetCore;
 using System.Text;
 using TicketSupportSystem.Common.Mappings;
 using TicketSupportSystem.Data;
@@ -9,7 +11,6 @@ using TicketSupportSystem.Data.Entities;
 using TicketSupportSystem.Interfaces;
 using TicketSupportSystem.Services;
 using TicketSupportSystem.Validators;
-using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddOpenApi();
 
 var config = builder.Configuration;
 
@@ -79,5 +82,8 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapOpenApi().AllowAnonymous();
+app.MapScalarApiReference();
 
 app.Run();
