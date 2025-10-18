@@ -1,6 +1,4 @@
-﻿using System.Linq.Expressions;
-using TicketSupportSystem.Data.Entities;
-using TicketSupportSystem.DTOs.Requests;
+﻿using TicketSupportSystem.DTOs.Requests;
 using TicketSupportSystem.DTOs.Responses;
 
 namespace TicketSupportSystem.Interfaces

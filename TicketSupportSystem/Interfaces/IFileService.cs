@@ -1,5 +1,4 @@
-﻿using System.Net.Mail;
-using TicketSupportSystem.DTOs.Responses;
+﻿using TicketSupportSystem.DTOs.Responses;
 
 namespace TicketSupportSystem.Interfaces
 {

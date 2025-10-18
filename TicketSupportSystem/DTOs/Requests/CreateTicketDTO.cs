@@ -1,5 +1,4 @@
-﻿using TicketSupportSystem.Data.Entities;
-using TicketSupportSystem.Data.Enums;
+﻿using TicketSupportSystem.Data.Enums;
 
 namespace TicketSupportSystem.DTOs.Requests
 {

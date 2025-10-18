@@ -1,5 +1,4 @@
-﻿using TicketSupportSystem.Data;
-using TicketSupportSystem.DTOs.Requests;
+﻿using TicketSupportSystem.DTOs.Requests;
 using TicketSupportSystem.DTOs.Responses;
 
 namespace TicketSupportSystem.Interfaces

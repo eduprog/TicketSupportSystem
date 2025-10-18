@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using TicketSupportSystem.Common.Mappings;
@@ -21,8 +20,8 @@ builder.Services.AddSwaggerGen();
 
 var config = builder.Configuration;
 
-string connection = config.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<TicketSupportSystemContext>(options => options.UseSqlServer(connection));
+string connection = config.GetConnectionString("DefaultConnection") ?? throw new ArgumentNullException("defaultConnection");
+builder.Services.AddDbContext<TicketSupportSystemContext>(options => options.UseNpgsql(connection));
 
 builder.Services.AddIdentity<User, Role>(o =>
     {

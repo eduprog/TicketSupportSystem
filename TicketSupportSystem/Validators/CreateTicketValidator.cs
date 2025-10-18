@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using TicketSupportSystem.Data.Enums;
 using TicketSupportSystem.DTOs.Requests;
 
 namespace TicketSupportSystem.Validators

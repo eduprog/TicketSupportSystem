@@ -1,11 +1,5 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.SqlServer.Query.Internal;
-using System.Linq.Expressions;
-using System.Net.Sockets;
-using System.Reflection.Metadata;
-using System.Security.Cryptography;
-using System.Text;
 using TicketSupportSystem.Common.Exceptions;
 using TicketSupportSystem.Data;
 using TicketSupportSystem.Data.Entities;

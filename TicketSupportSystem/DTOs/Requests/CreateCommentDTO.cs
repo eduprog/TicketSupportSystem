@@ -1,6 +1,4 @@
-﻿using TicketSupportSystem.Data.Entities;
-
-namespace TicketSupportSystem.DTOs.Requests
+﻿namespace TicketSupportSystem.DTOs.Requests
 {
     public class CreateCommentDTO
     {

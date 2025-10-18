@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using TicketSupportSystem.Common.Exceptions;
 using TicketSupportSystem.Data;
 using TicketSupportSystem.Data.Entities;
-using TicketSupportSystem.Data.Enums;
 using TicketSupportSystem.DTOs.Requests;
 using TicketSupportSystem.DTOs.Responses;
 using TicketSupportSystem.Interfaces;

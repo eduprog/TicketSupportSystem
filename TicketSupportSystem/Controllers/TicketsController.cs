@@ -1,19 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TicketSupportSystem.Common.Exceptions;
 using TicketSupportSystem.Data.Entities;
 using TicketSupportSystem.DTOs.Requests;
 using TicketSupportSystem.Interfaces;
-using System.Net.Sockets;
 using System.Security.Claims;
-using System.IdentityModel.Tokens.Jwt;
-using TicketSupportSystem.Services;
-using TicketSupportSystem.DTOs.Responses;
-using System.Xml.Linq;
 using FluentValidation;
-using TicketSupportSystem.Validators;
 
 namespace TicketSupportSystem.Controllers
 {
